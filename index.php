@@ -1,39 +1,30 @@
 <?php
 	session_start();
 	
-	if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true))
-	{
-		header('Location: panel.php'); 
+	if ((isset($_SESSION['logged_in'])) && ($_SESSION['logged_in']==true)) {
+		header('Location: user/show.php'); 
 		exit();
-	}
+    }
 ?>
 
 <!DOCTYPE HTML>
 <html lang="pl">
     <head>
-        <style type="text/css">
-            input[type="submit"]{
-            border: 1px solid #006633;
-            background-color: #009966;
-            color: #ffffff;
-            border-radius: 5px;
-            padding: 15px;
-            }
-        
-            header {
-            font-size: 200%;
-            font-family: "Courier New", Courier, monospace;
-            margin: 0px auto 15px auto;
-            text-align: center;}
-        </style>
-        
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title> Strona startowa </title>
     </head>
 
     <body>
-        <header> Witaj na stronie </header>
+        <header> Witaj na stronie! :) </header>
+
+        <form action="login.php" method="POST">
+            <center>Login: <input type="text" name="login" /></center><br />
+            <center>Hasło: <input type="password" name="password" /></center><br />
+            <center><input type="submit" value="ZALOGUJ" /></center>
+            <center><a href="register.php">Jeżeli nie masz konta - kliknij!</a><br /><br /></center>
+        </form>
         
         <?php
             if(isset($_SESSION['blad'])) { echo $_SESSION['blad']; }
