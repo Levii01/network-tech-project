@@ -9,7 +9,7 @@
 <!DOCTYPE HTML>
 <html lang="pl">
 	<head>
-		<link href="style.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/style.css" rel="stylesheet" type="text/css" media="all">
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title> Informacje o uzytkowniku </title>
@@ -19,7 +19,7 @@
 		<div class="card">
 			<div class="container">
 				<?php
-					echo "<p><h1>Witaj ".$_SESSION['login'].'!</h1> [<a href="logout.php">Wyloguj się!</a>]</p>';
+					echo "<p><h1>Witaj ".$_SESSION['login'].'!</h1> [<a href="/logout.php">Wyloguj się!</a>]</p>';
 					echo "<p><b>Imię</b>: ".$_SESSION['first_name']."</p>";
 					echo "<p><b>Nazwisko</b>: ".$_SESSION['last_name']."</p>";
 					echo "<p><b>E-mail</b>: ".$_SESSION['email']."</p>";

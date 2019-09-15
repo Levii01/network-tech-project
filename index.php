@@ -10,7 +10,7 @@
 <!DOCTYPE HTML>
 <html lang="pl">
     <head>
-        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all">
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title> Strona startowa </title>
