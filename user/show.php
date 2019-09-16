@@ -19,7 +19,8 @@
 		<div class="card">
 			<div class="container">
 				<?php
-					echo "<p><h1>Witaj ".$_SESSION['login'].'!</h1> [<a href="/logout.php">Wyloguj się!</a>]</p>';
+					echo "<p><h1>Witaj ".$_SESSION['login'].'!</h1> [<a href="/logout.php">Wyloguj się!</a>]'.
+ 							' || [<a href="/index.php">Strona główna</a>]</p>';
 					echo "<p><b>Imię</b>: ".$_SESSION['first_name']."</p>";
 					echo "<p><b>Nazwisko</b>: ".$_SESSION['last_name']."</p>";
 					echo "<p><b>E-mail</b>: ".$_SESSION['email']."</p>";
